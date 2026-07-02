@@ -1,11 +1,11 @@
-"use strict";
 'use client';
+"use strict";
 
 import { useState } from 'react';
 import { Clipboard, Send, Phone, Mail, MapPin } from 'lucide-react';
 
 export default function KontaktPage() {
-  const [formData, setFormData] = useState({ navn: '', epost: '', telefon: '', melding: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -20,7 +20,7 @@ export default function KontaktPage() {
       });
       if (res.ok) {
         setStatus('success');
-        setFormData({ navn: '', epost: '', telefon: '', melding: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
         setStatus('error');
       }
@@ -53,7 +53,7 @@ export default function KontaktPage() {
             </div>
             <div className="flex items-center gap-3">
               <Mail className="text-brand-orange" size={18} />
-              <a href="mailto:h1y2g3o4@gmail.com" className="hover:underline">h1y2g3o4@gmail.com</a>
+              <a href="mailto:vvvvvwwwwm@gmail.com" className="hover:underline">kontakt@skopbygg.no</a>
             </div>
           </div>
           <div className="pt-4 border-t border-gray-200 text-xs font-mono text-gray-400">
@@ -78,7 +78,7 @@ export default function KontaktPage() {
               <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Navn / Firma *</label>
               <input 
                 type="text" required 
-                value={formData.navn} onChange={(e) => setFormData({...formData, navn: e.target.value})}
+                value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
                 className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
               />
             </div>
@@ -88,7 +88,7 @@ export default function KontaktPage() {
                 <label className="block text-xs font-bold uppercase text-gray-500 mb-1">E-postadresse *</label>
                 <input 
                   type="email" required 
-                  value={formData.epost} onChange={(e) => setFormData({...formData, epost: e.target.value})}
+                  value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
                   className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
                 />
               </div>
@@ -96,7 +96,7 @@ export default function KontaktPage() {
                 <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Telefonnummer</label>
                 <input 
                   type="tel" 
-                  value={formData.telefon} onChange={(e) => setFormData({...formData, telefon: e.target.value})}
+                  value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
                 />
               </div>
@@ -106,7 +106,7 @@ export default function KontaktPage() {
               <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Beskrivelse av oppdraget *</label>
               <textarea 
                 rows={4} required 
-                value={formData.melding} onChange={(e) => setFormData({...formData, melding: e.target.value})}
+                value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
                 placeholder="Beskriv prosjektet ditt (f.eks. tilbygg, oppussing, murerarbeid)..."
                 className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
               />
