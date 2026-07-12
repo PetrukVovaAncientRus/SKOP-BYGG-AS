@@ -3,10 +3,10 @@ import ReviewNote from '@/components/ReviewNote';
 export default function AnmeldelserPage() {
   return (
     <div>
-      <div className="bg-brand-dark text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <div className="bg-[#1a1a1a] text-white py-16 border-b-4 border-[#ff7a00]">
+        <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-black tracking-tight uppercase">Kundeanmeldelser</h1>
-          <p className="text-gray-400 mt-2">Gjennomsiktighet og tilfredse byggherrer er vår stolthet.</p>
+          <p className="text-neutral-400 mt-2 max-w-xl mx-auto text-sm">Gjennomsiktighet og tilfredse byggherrer er vår stolthet.</p>
         </div>
       </div>
 

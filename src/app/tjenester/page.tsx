@@ -143,14 +143,10 @@ export default function TjenesterPage() {
   return (
     <div className="bg-gray-50 min-h-screen pb-20">
       {/* Banner / Header */}
-      <div className="bg-brand-dark text-white py-20 relative overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 opacity-5 pointer-events-none bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-        <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-          <span className="text-brand-orange text-xs font-mono tracking-widest uppercase block mb-2">SKOP BYGG AS — DRAMMEN</span>
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight uppercase text-white">Våre Tjenester</h1>
-          <p className="text-gray-400 mt-3 max-w-xl mx-auto text-sm md:text-base">
-            Profesjonell og forskriftsmessig utførelse innen alle byggefag i Viken og omegn. Klikk på en tjeneste for detaljer.
-          </p>
+      <div className="bg-[#1a1a1a] text-white py-16 border-b-4 border-[#ff7a00]">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h1 className="text-4xl font-black tracking-tight uppercase">Våre Tjenester</h1>
+          <p className="text-neutral-400 mt-2 max-w-xl mx-auto text-sm">Profesjonell og forskriftsmessig utførelse innen alle byggefag i Viken og omegn. Klikk på en tjeneste for detaljer.</p>
         </div>
       </div>
 

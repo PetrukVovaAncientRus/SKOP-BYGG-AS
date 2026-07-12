@@ -1,5 +1,4 @@
 'use client';
-"use strict";
 
 import { useState } from 'react';
 import { Clipboard, Send, Phone, Mail, MapPin } from 'lucide-react';
@@ -7,34 +6,41 @@ import { Clipboard, Send, Phone, Mail, MapPin } from 'lucide-react';
 export default function KontaktPage() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    
+    setErrorMsg('');
+
     try {
       const res = await fetch('/api/kontakt', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
+
+      const data = await res.json().catch(() => ({}));
+
       if (res.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
+        setErrorMsg(data.error || 'Noe gikk galt. Prøv igjen.');
         setStatus('error');
       }
     } catch {
+      setErrorMsg('Kunne ikke nå serveren. Sjekk internettforbindelsen din.');
       setStatus('error');
     }
   };
 
   return (
     <div>
-      <div className="bg-brand-dark text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-3xl font-black uppercase tracking-tight">Kontakt Byggeleder</h1>
-          <p className="text-gray-400 mt-1">Svar innen 24 timer på virkedager.</p>
+      <div className="bg-[#1a1a1a] text-white py-16 border-b-4 border-[#ff7a00]">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h1 className="text-4xl font-black tracking-tight uppercase">Kontakt Byggeleder</h1>
+          <p className="text-neutral-400 mt-2 max-w-xl mx-auto text-sm">Svar innen 24 timer på virkedager.</p>
         </div>
       </div>
 
@@ -53,7 +59,7 @@ export default function KontaktPage() {
             </div>
             <div className="flex items-center gap-3">
               <Mail className="text-brand-orange" size={18} />
-              <a href="mailto:vvvvvwwwwm@gmail.com" className="hover:underline">kontakt@skopbygg.no</a>
+              <a href="mailto:h1y2g3o4@gmail.com" className="hover:underline">h1y2g3o4@gmail.com</a>
             </div>
           </div>
           <div className="pt-4 border-t border-gray-200 text-xs font-mono text-gray-400">
@@ -63,11 +69,10 @@ export default function KontaktPage() {
 
         {/* Utklippstavle Skjema */}
         <div className="md:col-span-7 bg-white border-4 border-neutral-300 rounded-xl shadow-xl relative overflow-hidden">
-          {/* Toppen av utklippstavlen (Mekanisk klemme-design) */}
           <div className="bg-neutral-400 h-8 w-1/3 mx-auto rounded-b-lg flex items-center justify-center shadow-inner relative z-10">
             <div className="w-4 h-4 bg-neutral-600 rounded-full" />
           </div>
-          
+
           <form onSubmit={handleSubmit} className="p-8 space-y-5 bg-[#fffdfa]">
             <div className="flex items-center gap-2 border-b border-gray-200 pb-3 mb-4">
               <Clipboard className="text-brand-orange" size={20} />
@@ -76,9 +81,9 @@ export default function KontaktPage() {
 
             <div>
               <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Navn / Firma *</label>
-              <input 
-                type="text" required 
-                value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
+              <input
+                type="text" required
+                value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
               />
             </div>
@@ -86,17 +91,17 @@ export default function KontaktPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-bold uppercase text-gray-500 mb-1">E-postadresse *</label>
-                <input 
-                  type="email" required 
-                  value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
+                <input
+                  type="email" required
+                  value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
                 />
               </div>
               <div>
                 <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Telefonnummer</label>
-                <input 
-                  type="tel" 
-                  value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                <input
+                  type="tel"
+                  value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
                 />
               </div>
@@ -104,9 +109,9 @@ export default function KontaktPage() {
 
             <div>
               <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Beskrivelse av oppdraget *</label>
-              <textarea 
-                rows={4} required 
-                value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
+              <textarea
+                rows={4} required
+                value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Beskriv prosjektet ditt (f.eks. tilbygg, oppussing, murerarbeid)..."
                 className="w-full border-2 border-gray-200 p-2.5 rounded focus:border-brand-orange outline-none text-sm"
               />
@@ -129,7 +134,7 @@ export default function KontaktPage() {
             )}
             {status === 'error' && (
               <p className="text-rose-700 bg-rose-50 border border-rose-200 p-3 rounded text-sm text-center">
-                Noe gikk galt. Vennligst prøv igjen eller ring oss direkte.
+                {errorMsg || 'Noe gikk galt. Vennligst prøv igjen eller ring oss direkte.'}
               </p>
             )}
           </form>
