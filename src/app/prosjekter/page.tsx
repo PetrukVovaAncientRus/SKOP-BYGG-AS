@@ -1,8 +1,9 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import Link from 'next/link';
 
 interface Prosjekt {
   id: number;
@@ -25,7 +26,7 @@ export default function ProsjekterPage() {
       sted: "Drammen",
       type: "Innvendig renovering",
       status: "Fullført",
-      beskrivelse: "Nye hubel,graving,radon membran, nye Vindy ,nye bad.",
+      beskrivelse: "Innvendig renovering med graving, radonmembran, nye vinduer og nytt bad.",
       images: [
         "/images/projects/project1/1.jpg",
         "/images/projects/project1/2.jpg",
@@ -49,7 +50,7 @@ export default function ProsjekterPage() {
       sted: "Drammen",
       type: "Tilbygg & Påbygg",
       status: "Fullført",
-      beskrivelse: "Legging av terrassen.",
+      beskrivelse: "Bygging av terrasse og uteområde i Drammen.",
       images: [
         "/images/projects/project2/1.jpg",
         "/images/projects/project2/2.jpg",
@@ -62,11 +63,11 @@ export default function ProsjekterPage() {
     },
     {
       id: 3,
-      tittel: "Bygging av en Ingretsvei",
+      tittel: "Bygging av inngangsvei",
       sted: "Drammen",
       type: "Tilbygg & Påbygg",
       status: "Fullført",
-      beskrivelse: "Ingretsvei.",
+      beskrivelse: "Opparbeiding av inngangsvei og praktisk adkomst.",
       images: [
         "/images/projects/project3/1.jpg",
         "/images/projects/project3/2.jpg",
@@ -84,7 +85,7 @@ export default function ProsjekterPage() {
       sted: "Drammen",
       type: "Rehabilitering",
       status: "Fullført",
-      beskrivelse: "Huskledning med treverk.",
+      beskrivelse: "Restaurering av hus med etterisolering, nye moderne vinduer, fasadepaneler og nytt tak.",
       images: [
         "/images/projects/project4/1.jpg",
         "/images/projects/project4/2.jpg",
@@ -99,7 +100,7 @@ export default function ProsjekterPage() {
       sted: "Drammen",
       type: "Tilbygg & Påbygg",
       status: "Fullført",
-      beskrivelse: "Bygge en bakgård med et tak.",
+      beskrivelse: "Ny pergola, tak og terrasse for uteområde.",
       images: [
         "/images/projects/project5/1.jpg",
         "/images/projects/project5/2.jpg",
@@ -115,7 +116,7 @@ export default function ProsjekterPage() {
       sted: "Drammen",
       type: "Tilbygg & Påbygg",
       status: "Fullført",
-      beskrivelse: "Bygging av et tilbygg til huset.",
+      beskrivelse: "Tilbygg.",
       images: [
         "/images/projects/project6/1.jpg",
         "/images/projects/project6/2.jpg",
@@ -161,7 +162,7 @@ export default function ProsjekterPage() {
       sted: "Drammen",
       type: "Innvendig renovering",
       status: "Fullført",
-      beskrivelse: "Nye Bad.",
+      beskrivelse: "Nytt bad med moderne overflater.",
       images: [
         "/images/projects/project8/1.jpg",
         "/images/projects/project8/2.jpg",
@@ -222,9 +223,16 @@ export default function ProsjekterPage() {
     <div className="bg-neutral-50 min-h-screen pb-20">
       {/* Head */}
       <div className="bg-[#1a1a1a] text-white py-16 border-b-4 border-[#ff7a00]">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl font-black tracking-tight uppercase">Utførte Prosjekter</h1>
-          <p className="text-neutral-400 mt-2 max-w-xl mx-auto text-sm">Portefølje av fullførte prosjekter av SKOP BYGG AS</p>
+        <div className="max-w-6xl mx-auto px-4 text-center space-y-3">
+          <nav aria-label="Brodsmulesti" className="text-xs text-neutral-500">
+            <ol className="flex flex-wrap items-center justify-center gap-2">
+              <li><Link href="/" className="hover:text-brand-orange">Hjem</Link></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" className="text-neutral-300">Prosjekter</li>
+            </ol>
+          </nav>
+          <h1 className="text-4xl font-black tracking-tight uppercase">Utførte prosjekter</h1>
+          <p className="text-neutral-400 mt-2 max-w-xl mx-auto text-sm">Portefølje av fullførte byggeprosjekter fra SKOP BYGG AS i Drammen og Buskerud.</p>
         </div>
       </div>
 
@@ -250,7 +258,7 @@ export default function ProsjekterPage() {
                     >
                       <Image
                         src={img}
-                        alt={`${project.tittel} - bilde ${index + 1}`}
+                        alt={`${project.type} i ${project.sted}: ${project.tittel} - bilde ${index + 1}`}
                         fill
                         sizes="(max-width: 768px) 50vw, 35vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -334,7 +342,7 @@ export default function ProsjekterPage() {
             <div className="relative w-full h-full max-w-5xl">
               <Image
                 src={activeProject.images[currentImgIndex]}
-                alt="Forstørret prosjektbilde"
+                alt={`${activeProject.type} i ${activeProject.sted}: ${activeProject.tittel}`}
                 fill
                 className="object-contain"
                 sizes="100vw"

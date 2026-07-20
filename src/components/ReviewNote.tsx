@@ -16,9 +16,9 @@ export default function ReviewNote({ author, projectType, comment, rating }: Rev
           <ClipboardCheck size={16} className="text-brand-orange" />
           <span>BYGGEPLASS-RAPPORT // GODKJENT</span>
         </div>
-        <div className="flex gap-0.5">
+        <div className="flex gap-0.5" aria-label={`${rating} av 5 stjerner`}>
           {[...Array(rating)].map((_, i) => (
-            <Star key={i} size={14} className="fill-brand-orange text-brand-orange" />
+            <Star key={i} size={14} className="fill-brand-orange text-brand-orange" aria-hidden="true" />
           ))}
         </div>
       </div>
