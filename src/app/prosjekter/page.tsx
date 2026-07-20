@@ -224,7 +224,7 @@ export default function ProsjekterPage() {
       {/* Head */}
       <div className="bg-[#1a1a1a] text-white py-16 border-b-4 border-[#ff7a00]">
         <div className="max-w-6xl mx-auto px-4 text-center space-y-3">
-          <nav aria-label="Brodsmulesti" className="text-xs text-neutral-500">
+          <nav aria-label="Brødsmulesti" className="text-xs text-neutral-500">
             <ol className="flex flex-wrap items-center justify-center gap-2">
               <li><Link href="/" className="hover:text-brand-orange">Hjem</Link></li>
               <li aria-hidden="true">/</li>

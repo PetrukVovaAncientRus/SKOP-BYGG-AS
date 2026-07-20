@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Siden finnes ikke",
   description:
-    "Siden du leter etter finnes ikke. Gа tilbake til SKOP BYGG AS for byggtjenester i Drammen og Buskerud.",
+    "Siden du leter etter finnes ikke. Gå tilbake til SKOP BYGG AS for byggtjenester i Drammen og Buskerud.",
   path: "/404",
 });
 
@@ -19,7 +19,7 @@ export default function NotFound() {
           Siden finnes ikke
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed">
-          Lenken kan vaere flyttet eller slettet. Gа tilbake til forsiden for a
+          Lenken kan være flyttet eller slettet. Gå tilbake til forsiden for å
           finne byggtjenester, prosjekter og kontaktinformasjon.
         </p>
         <Link

@@ -27,17 +27,11 @@ export const siteConfig = {
     longitude: 10.2045,
   },
   areasServed: ["Drammen", "Buskerud", "Oslo", "Norge"],
-  sameAs: [
-    "https://www.facebook.com/skopbygg-placeholder",
-    "https://www.instagram.com/skopbygg-placeholder",
-    "https://www.linkedin.com/company/skopbygg-placeholder",
-  ],
+  sameAs: [] as string[],
   themeColor: "#ff7a00",
   logo: "/images/logo-skop-bygg.png",
   verification: {
-    google:
-      process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
-      "google-site-verification-placeholder",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
   analytics: {
     gaId: process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX",
@@ -59,16 +53,13 @@ export const seoKeywords = [
   "byggefirma Drammen",
   "byggfirma Drammen",
   "tømrer Drammen",
-  "tomrer Drammen",
   "nybygg Drammen",
   "tilbygg Drammen",
   "påbygg Drammen",
-  "pabygg Drammen",
   "renovering Drammen",
   "rehabilitering Buskerud",
   "bad Drammen",
   "kjøkken Drammen",
-  "kjokken Drammen",
   "tak Drammen",
   "fasade Drammen",
   "terrasse Drammen",

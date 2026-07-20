@@ -149,7 +149,7 @@ export default function CraneHero() {
                   {/* Vinduer og dører i hovedbygningen */}
                   <rect x="65" y="80" width="30" height="22" className="opacity-70" />
                   <line x1="80" y1="80" x2="80" y2="102" className="opacity-50" />
-                  <rect x="120" y="85" width="25" height="45" className="opacity-70" /> {/* Дверь */}
+                  <rect x="120" y="85" width="25" height="45" className="opacity-70" /> {/* Dør */}
                   <circle cx="125" cy="108" r="1" fill="currentColor" />
                   
                   {/* Vindu på utvidelsen (oransje) */}

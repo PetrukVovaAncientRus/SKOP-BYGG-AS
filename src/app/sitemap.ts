@@ -9,7 +9,6 @@ const staticRoutes = [
   "/prosjekter",
   "/anmeldelser",
   "/kontakt",
-  "/services",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

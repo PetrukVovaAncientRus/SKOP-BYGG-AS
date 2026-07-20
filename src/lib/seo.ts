@@ -143,7 +143,7 @@ export function businessJsonLd() {
         telephone: siteConfig.phone,
         priceRange: "$$",
         taxID: siteConfig.orgNumber,
-        sameAs: siteConfig.sameAs,
+        ...(siteConfig.sameAs.length > 0 ? { sameAs: siteConfig.sameAs } : {}),
         address: {
           "@type": "PostalAddress",
           streetAddress: siteConfig.address.streetAddress,

@@ -18,7 +18,7 @@ export default function ErrorPage({
           Noe gikk galt
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed">
-          Vi klarte ikke a vise siden akkurat na. Prov igjen, eller kontakt SKOP
+          Vi klarte ikke å vise siden akkurat nå. Prøv igjen, eller kontakt SKOP
           BYGG AS direkte.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -26,7 +26,7 @@ export default function ErrorPage({
             onClick={reset}
             className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-brand-orange text-white font-bold hover:bg-brand-dark transition-colors"
           >
-            Prov igjen
+            Prøv igjen
           </button>
           <Link
             href="/kontakt"

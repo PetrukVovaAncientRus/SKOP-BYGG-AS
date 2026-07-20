@@ -77,7 +77,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           <div className="bg-gray-50 border border-gray-200/60 p-5 rounded-xl">
             <h2 className="text-sm font-mono uppercase tracking-wider text-gray-500 mb-3 flex items-center">
               <ClipboardCheck size={16} className="mr-2 text-brand-orange" />
-              Hva som inngar
+              Hva som inngår
             </h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               {service.included.map((item) => (
@@ -121,7 +121,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
           <div>
             <h2 className="text-2xl font-black tracking-tight text-gray-900">
-              Ofte stilte sporsmal
+              Ofte stilte spørsmål
             </h2>
             <div className="mt-4 space-y-3">
               {service.faq.map((item) => (
@@ -147,7 +147,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               Be om tilbud
             </h2>
             <p className="text-gray-300 text-sm mt-3 leading-relaxed">
-              Fortell oss hva du vil bygge eller renovere, sa tar vi kontakt
+              Fortell oss hva du vil bygge eller renovere, så tar vi kontakt
               for en uforpliktende prat.
             </p>
             <Link

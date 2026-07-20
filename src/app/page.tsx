@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Byggefirma i Drammen, Buskerud",
   description:
-    "SKOP BYGG AS tilbyr nybygg, tilbygg, rehabilitering, renovering, bad, kjokken, tomrerarbeid og byggeprosjekter i Drammen, Buskerud, Oslo og Norge.",
+    "SKOP BYGG AS tilbyr nybygg, tilbygg, rehabilitering, renovering, bad, kjøkken, tømrerarbeid og byggeprosjekter i Drammen, Buskerud, Oslo og Norge.",
   path: "/",
 });
 
@@ -16,24 +16,24 @@ export default function HomePage() {
   const previewServices = [
     {
       title: "Nybygg",
-      desc: "Komplette og energieffektive boliger oppfort etter norske byggestandarder.",
+      desc: "Komplette og energieffektive boliger oppført etter norske byggestandarder.",
       icon: <Home size={20} />,
       href: "/services/nybygg",
     },
     {
-      title: "Tilbygg & pabygg",
+      title: "Tilbygg & påbygg",
       desc: "Trenger familien mer plass? Vi utvider boligen som en naturlig del av huset.",
       icon: <Layers size={20} />,
       href: "/services/tilbygg",
     },
     {
       title: "Rehabilitering",
-      desc: "Fornyelse av eldre bygg med fokus pa bevaring, isolasjon og modernisering.",
+      desc: "Fornyelse av eldre bygg med fokus på bevaring, isolasjon og modernisering.",
       icon: <RefreshCw size={20} />,
       href: "/services/rehabilitering",
     },
     {
-      title: "Tomrerarbeid",
+      title: "Tømrerarbeid",
       desc: "Alt innen bindingsverk, kledning, takarbeid, terrasse og solid innredning.",
       icon: <Hammer size={20} />,
       href: "/services/tomrer",
@@ -47,13 +47,13 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-black uppercase tracking-tight text-brand-dark mb-4">
-            Solid handverk.{" "}
+            Solid håndverk.{" "}
             <span className="text-brand-orange">Erfarne byggmestre.</span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-            Med base i Drammen leverer SKOP BYGG AS kvalitet i alle ledd. Vart
+            Med base i Drammen leverer SKOP BYGG AS kvalitet i alle ledd. Vårt
             team har solid erfaring med nybygg, tilbygg, renovering, bad,
-            kjokken, tak, fasade, terrasse, garasje og tomrerarbeid i Buskerud
+            kjøkken, tak, fasade, terrasse, garasje og tømrerarbeid i Buskerud
             og Oslo.
           </p>
         </div>
@@ -64,10 +64,10 @@ export default function HomePage() {
           <div className="flex justify-between items-end mb-12">
             <div>
               <span className="text-brand-orange font-bold text-sm tracking-widest uppercase block mb-2">
-                Hva vi gjor
+                Hva vi gjør
               </span>
               <h2 className="text-3xl font-black text-brand-dark">
-                Vare kjernetjenester
+                Våre kjernetjenester
               </h2>
             </div>
             <Link
@@ -99,7 +99,7 @@ export default function HomePage() {
               Siste fra byggeplassen
             </h2>
             <p className="text-gray-500 mt-2">
-              Hva vare kunder i Drammen, Buskerud og omegn sier om vare utforte
+              Hva våre kunder i Drammen, Buskerud og omegn sier om våre utførte
               arbeider.
             </p>
           </div>
@@ -108,19 +108,19 @@ export default function HomePage() {
             <ReviewNote
               author="Jan Erik L., Drammen"
               projectType="Tilbygg enebolig"
-              comment="SKOP BYGG bygde nytt tilbygg pa 45 kvm for oss. Utmerket kommunikasjon og ferdigstilt noyaktig i henhold til tidsplanen."
+              comment="SKOP BYGG bygde nytt tilbygg på 45 kvm for oss. Utmerket kommunikasjon og ferdigstilt nøyaktig i henhold til tidsplanen."
               rating={5}
             />
             <ReviewNote
               author="Monika K., Lier"
               projectType="Totalrenovering"
-              comment="Svaert profesjonelt team. De pusset opp hele forste etasje, inkludert gipsing, maling og nytt gulv. Anbefales pa det sterkeste!"
+              comment="Svært profesjonelt team. De pusset opp hele første etasje, inkludert gipsing, maling og nytt gulv. Anbefales på det sterkeste!"
               rating={5}
             />
             <ReviewNote
               author="Ole Petter S., Gulskogen"
               projectType="Takfornying"
-              comment="Rask og effektiv utskifting av takstein pa garasje og hovedhus. Meget konkurransedyktig pris og ryddig opprydning etterpa."
+              comment="Rask og effektiv utskifting av takstein på garasje og hovedhus. Meget konkurransedyktig pris og ryddig opprydning etterpå."
               rating={5}
             />
           </div>

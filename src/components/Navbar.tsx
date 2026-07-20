@@ -29,8 +29,8 @@ export default function Navbar() {
               <Image
                 src="/images/logo-skop-bygg.png"
                 alt="SKOP BYGG AS logo"
-                width={240}
-                height={70}
+                width={192}
+                height={192}
                 priority
                 fetchPriority="high"
                 className="h-12 w-auto transition-transform duration-300 hover:scale-105"

@@ -90,7 +90,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-neutral-800 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} SKOP BYGG AS. Alle rettigheter reservert.
-        Utviklet etter skandinaviske byggestandarder.
+        | Developed by Noirin.
       </div>
     </footer>
   );

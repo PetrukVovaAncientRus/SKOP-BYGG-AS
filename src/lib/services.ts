@@ -32,10 +32,10 @@ export const services: Service[] = [
     title: "Nybygg i Drammen og Buskerud",
     shortTitle: "Nybygg",
     description:
-      "Komplette nybygg, hus, hytter og garasjer levert med solid tomrerarbeid, ryddig prosjektstyring og norske byggestandarder.",
+      "Komplette nybygg, hus, hytter og garasjer levert med solid tømrerarbeid, ryddig prosjektstyring og norske byggestandarder.",
     seoTitle: "Nybygg Drammen",
     seoDescription:
-      "SKOP BYGG AS leverer nybygg, hus, hytte og garasje i Drammen, Buskerud og Oslo med erfarne tomrere og trygg prosjektgjennomforing.",
+      "SKOP BYGG AS leverer nybygg, hus, hytte og garasje i Drammen, Buskerud og Oslo med erfarne tømrere og trygg prosjektgjennomføring.",
     keywords: ["nybygg", "hus", "hytte", "garasje", "Drammen", "Buskerud"],
     included: [
       "Eneboliger, tomannsboliger og mindre boligprosjekter",
@@ -46,15 +46,15 @@ export const services: Service[] = [
     process: [
       {
         title: "Planlegging",
-        text: "Vi gjennomgar behov, tegninger og fremdrift for a avklare omfang, budsjett og ansvar.",
+        text: "Vi gjennomgår behov, tegninger og fremdrift for å avklare omfang, budsjett og ansvar.",
       },
       {
         title: "Bygging",
-        text: "Arbeidet gjennomfores med fokus pa presisjon, sikkerhet og god kommunikasjon underveis.",
+        text: "Arbeidet gjennomføres med fokus på presisjon, sikkerhet og god kommunikasjon underveis.",
       },
       {
         title: "Overlevering",
-        text: "Prosjektet kontrolleres, dokumenteres og overleveres ryddig nar arbeidet er ferdig.",
+        text: "Prosjektet kontrolleres, dokumenteres og overleveres ryddig når arbeidet er ferdig.",
       },
     ],
     faq: [
@@ -66,7 +66,7 @@ export const services: Service[] = [
       {
         question: "Kan dere koordinere flere fag?",
         answer:
-          "Ja, vi kan koordinere relevante fag og leverandorer som del av et ryddig byggeprosjekt.",
+          "Ja, vi kan koordinere relevante fag og leverandører som del av et ryddig byggeprosjekt.",
       },
     ],
   },
@@ -75,13 +75,13 @@ export const services: Service[] = [
     title: "Tilbygg i Drammen",
     shortTitle: "Tilbygg",
     description:
-      "Tilbygg som gir mer plass til stue, kjokken, inngangsparti, soverom eller utleiedel, tilpasset eksisterende bolig.",
+      "Tilbygg som gir mer plass til stue, kjøkken, inngangsparti, soverom eller utleiedel, tilpasset eksisterende bolig.",
     seoTitle: "Tilbygg Drammen",
     seoDescription:
       "Trenger du mer plass? SKOP BYGG AS bygger tilbygg i Drammen og Buskerud med god integrasjon mot eksisterende hus.",
     keywords: ["tilbygg", "byggefirma", "Drammen", "Buskerud", "Oslo"],
     included: [
-      "Utvidelse av stue, kjokken eller inngangsparti",
+      "Utvidelse av stue, kjøkken eller inngangsparti",
       "Nye soverom, kontor, bad eller utleiedel",
       "Tetting mellom gammelt og nytt bygg",
       "Innvendig ferdigstilling og listverk",
@@ -89,11 +89,11 @@ export const services: Service[] = [
     process: [
       {
         title: "Tilstandsvurdering",
-        text: "Vi vurderer eksisterende konstruksjon, baering og praktiske losninger for utvidelsen.",
+        text: "Vi vurderer eksisterende konstruksjon, bæring og praktiske løsninger for utvidelsen.",
       },
       {
         title: "Integrasjon",
-        text: "Tilbygget bygges med fokus pa tetthet, isolasjon og helhetlig uttrykk.",
+        text: "Tilbygget bygges med fokus på tetthet, isolasjon og helhetlig uttrykk.",
       },
       {
         title: "Ferdigstilling",
@@ -102,38 +102,38 @@ export const services: Service[] = [
     ],
     faq: [
       {
-        question: "Kan dere bygge tilbygg pa eksisterende bolig?",
+        question: "Kan dere bygge tilbygg på eksisterende bolig?",
         answer:
           "Ja, vi bygger tilbygg og hjelper med praktiske avklaringer rundt eksisterende konstruksjon.",
       },
       {
         question: "Jobber dere i Oslo og Buskerud?",
         answer:
-          "Ja, vi tar oppdrag i Drammen, Buskerud, Oslo og omkringliggende omrader.",
+          "Ja, vi tar oppdrag i Drammen, Buskerud, Oslo og omkringliggende områder.",
       },
     ],
   },
   {
     slug: "pabygg",
-    title: "Pabygg og takloft",
-    shortTitle: "Pabygg",
+    title: "Påbygg og takloft",
+    shortTitle: "Påbygg",
     description:
-      "Pabygg, takloft og ekstra etasje for boliger som trenger mer areal uten a bygge ut i bredden.",
-    seoTitle: "Pabygg Drammen",
+      "Påbygg, takloft og ekstra etasje for boliger som trenger mer areal uten å bygge ut i bredden.",
+    seoTitle: "Påbygg Drammen",
     seoDescription:
-      "SKOP BYGG AS bygger pabygg, takloft og ekstra areal i Drammen og Buskerud med trygt tomrerarbeid.",
-    keywords: ["pabygg", "takloft", "tomrer", "Drammen"],
+      "SKOP BYGG AS bygger påbygg, takloft og ekstra areal i Drammen og Buskerud med trygt tømrerarbeid.",
+    keywords: ["påbygg", "takloft", "tømrer", "Drammen"],
     included: ["Takloft", "Ekstra etasje", "Arker", "Forsterkning av konstruksjon"],
     process: [
-      { title: "Avklaring", text: "Vi vurderer baering, hoyder og praktisk gjennomforing." },
-      { title: "Tetting", text: "Tak og vegger sikres mot vaer under byggeperioden." },
+      { title: "Avklaring", text: "Vi vurderer bæring, høyder og praktisk gjennomføring." },
+      { title: "Tetting", text: "Tak og vegger sikres mot vær under byggeperioden." },
       { title: "Finish", text: "Innvendige flater og detaljer ferdigstilles ryddig." },
     ],
     faq: [
       {
-        question: "Er pabygg mulig pa alle hus?",
+        question: "Er påbygg mulig på alle hus?",
         answer:
-          "Det ma vurderes konkret ut fra baering, regulering og teknisk tilstand.",
+          "Det må vurderes konkret ut fra bæring, regulering og teknisk tilstand.",
       },
     ],
   },
@@ -142,12 +142,12 @@ export const services: Service[] = [
     title: "Rehabilitering i Buskerud",
     shortTitle: "Rehabilitering",
     description:
-      "Rehabilitering av eldre boliger, fasader, tak, vinduer og konstruksjoner med fokus pa varig kvalitet.",
+      "Rehabilitering av eldre boliger, fasader, tak, vinduer og konstruksjoner med fokus på varig kvalitet.",
     seoTitle: "Rehabilitering Buskerud",
     seoDescription:
-      "SKOP BYGG AS utforer rehabilitering og oppgradering av hus, fasade, tak og eldre bygg i Drammen og Buskerud.",
+      "SKOP BYGG AS utfører rehabilitering og oppgradering av hus, fasade, tak og eldre bygg i Drammen og Buskerud.",
     keywords: ["rehabilitering", "fasade", "tak", "Drammen", "Buskerud"],
-    included: ["Etterisolering", "Kledningsbytte", "Vinduer og dorer", "Tak og fasade"],
+    included: ["Etterisolering", "Kledningsbytte", "Vinduer og dører", "Tak og fasade"],
     process: [
       { title: "Kartlegging", text: "Vi avdekker behov, skader og prioriterte tiltak." },
       { title: "Utbedring", text: "Skadde og utdaterte deler utbedres med riktige materialer." },
@@ -166,62 +166,62 @@ export const services: Service[] = [
     title: "Renovering av bolig",
     shortTitle: "Renovering",
     description:
-      "Innvendig renovering av gulv, vegger, vinduer, dor, kjokken og oppholdsrom med profesjonell finish.",
+      "Innvendig renovering av gulv, vegger, vinduer, dør, kjøkken og oppholdsrom med profesjonell finish.",
     seoTitle: "Renovering Drammen",
     seoDescription:
-      "Renovering i Drammen: SKOP BYGG AS pusser opp boliger, kjokken, gulv, vegger og innvendige rom.",
-    keywords: ["renovering", "oppussing", "kjokken", "Drammen"],
-    included: ["Gulv", "Vegger", "Vinduer", "Dorer", "Kjokken"],
+      "Renovering i Drammen: SKOP BYGG AS pusser opp boliger, kjøkken, gulv, vegger og innvendige rom.",
+    keywords: ["renovering", "oppussing", "kjøkken", "Drammen"],
+    included: ["Gulv", "Vegger", "Vinduer", "Dører", "Kjøkken"],
     process: [
-      { title: "Forarbeid", text: "Gamle flater fjernes og rommet klargjores." },
+      { title: "Forarbeid", text: "Gamle flater fjernes og rommet klargjøres." },
       { title: "Oppbygging", text: "Nye flater, rammer og detaljer monteres presist." },
-      { title: "Sluttfinish", text: "Listverk, overganger og detaljer fullfores." },
+      { title: "Sluttfinish", text: "Listverk, overganger og detaljer fullføres." },
     ],
     faq: [
       {
         question: "Tar dere innvendig renovering?",
         answer:
-          "Ja, vi tar innvendig renovering av boliger, kjokken, gulv, vegger og detaljer.",
+          "Ja, vi tar innvendig renovering av boliger, kjøkken, gulv, vegger og detaljer.",
       },
     ],
   },
   {
     slug: "tomrer",
-    title: "Tomrer i Drammen",
-    shortTitle: "Tomrer",
+    title: "Tømrer i Drammen",
+    shortTitle: "Tømrer",
     description:
-      "Tomrerarbeid for bolig, tak, kledning, terrasse, garasje, lettvegger, listverk og konstruksjoner.",
-    seoTitle: "Tomrer Drammen",
+      "Tømrerarbeid for bolig, tak, kledning, terrasse, garasje, lettvegger, listverk og konstruksjoner.",
+    seoTitle: "Tømrer Drammen",
     seoDescription:
-      "Trenger du tomrer i Drammen? SKOP BYGG AS leverer solid tomrerarbeid i Drammen, Buskerud og Oslo.",
-    keywords: ["tomrer", "byggfirma", "Drammen", "Buskerud"],
+      "Trenger du tømrer i Drammen? SKOP BYGG AS leverer solid tømrerarbeid i Drammen, Buskerud og Oslo.",
+    keywords: ["tømrer", "byggfirma", "Drammen", "Buskerud"],
     included: ["Bindingsverk", "Kledning", "Takarbeid", "Terrasse", "Listverk"],
     process: [
-      { title: "Oppmaling", text: "Arbeidet males opp og planlegges for riktig passform." },
+      { title: "Oppmåling", text: "Arbeidet måles opp og planlegges for riktig passform." },
       { title: "Montering", text: "Konstruksjoner og detaljer monteres solid og presist." },
       { title: "Kontroll", text: "Resultatet kontrolleres for finish og funksjon." },
     ],
     faq: [
       {
-        question: "Utforer dere tomrerarbeid i Drammen?",
+        question: "Utfører dere tømrerarbeid i Drammen?",
         answer:
-          "Ja, SKOP BYGG AS tilbyr tomrerarbeid i Drammen, Buskerud og Oslo.",
+          "Ja, SKOP BYGG AS tilbyr tømrerarbeid i Drammen, Buskerud og Oslo.",
       },
     ],
   },
   {
     slug: "bad",
-    title: "Bad og vatrom",
+    title: "Bad og våtrom",
     shortTitle: "Bad",
     description:
-      "Baderomsrenovering og vatromsarbeid med gode underlag, flis, membran og koordinering av fag.",
+      "Baderomsrenovering og våtromsarbeid med gode underlag, flis, membran og koordinering av fag.",
     seoTitle: "Bad Drammen",
     seoDescription:
       "SKOP BYGG AS hjelper med bad og baderomsrenovering i Drammen, Buskerud og Oslo.",
-    keywords: ["bad", "baderomsrenovering", "vatrom", "Drammen"],
+    keywords: ["bad", "baderomsrenovering", "våtrom", "Drammen"],
     included: ["Riving", "Oppbygging", "Flis", "Membran", "Koordinering"],
     process: [
-      { title: "Plan", text: "Vi avklarer losning, materialer og praktisk fremdrift." },
+      { title: "Plan", text: "Vi avklarer løsning, materialer og praktisk fremdrift." },
       { title: "Oppbygging", text: "Underlag og konstruksjon bygges for varig resultat." },
       { title: "Ferdig bad", text: "Detaljer og overflater ferdigstilles med ryddig kontroll." },
     ],
@@ -229,31 +229,31 @@ export const services: Service[] = [
       {
         question: "Renoverer dere bad?",
         answer:
-          "Ja, vi hjelper med baderomsrenovering og koordinering av nodvendige fag.",
+          "Ja, vi hjelper med baderomsrenovering og koordinering av nødvendige fag.",
       },
     ],
   },
   {
     slug: "kjokken",
-    title: "Kjokkenrenovering",
-    shortTitle: "Kjokken",
+    title: "Kjøkkenrenovering",
+    shortTitle: "Kjøkken",
     description:
-      "Renovering av kjokken med tilpassing, montering, vegger, gulv og praktiske byggdetaljer.",
-    seoTitle: "Kjokken Drammen",
+      "Renovering av kjøkken med tilpassing, montering, vegger, gulv og praktiske byggdetaljer.",
+    seoTitle: "Kjøkken Drammen",
     seoDescription:
-      "Kjokkenrenovering i Drammen: SKOP BYGG AS hjelper med oppussing, montering og byggdetaljer.",
-    keywords: ["kjokken", "renovering", "Drammen"],
+      "Kjøkkenrenovering i Drammen: SKOP BYGG AS hjelper med oppussing, montering og byggdetaljer.",
+    keywords: ["kjøkken", "renovering", "Drammen"],
     included: ["Montering", "Gulv", "Vegger", "Listverk", "Tilpassing"],
     process: [
-      { title: "Forarbeid", text: "Rommet klargjores for ny losning." },
-      { title: "Montering", text: "Kjokken og detaljer tilpasses presist." },
+      { title: "Forarbeid", text: "Rommet klargjøres for ny løsning." },
+      { title: "Montering", text: "Kjøkken og detaljer tilpasses presist." },
       { title: "Finish", text: "Overganger, lister og flater ferdigstilles." },
     ],
     faq: [
       {
-        question: "Kan dere renovere kjokken?",
+        question: "Kan dere renovere kjøkken?",
         answer:
-          "Ja, vi utforer kjokkenrenovering og tilhorende tomrerarbeid.",
+          "Ja, vi utfører kjøkkenrenovering og tilhørende tømrerarbeid.",
       },
     ],
   },
@@ -265,19 +265,19 @@ export const services: Service[] = [
       "Takarbeid, takfornying, undertak, lekter og reparasjoner for boliger og garasjer.",
     seoTitle: "Tak Drammen",
     seoDescription:
-      "SKOP BYGG AS utforer takarbeid og takfornying i Drammen, Buskerud og Oslo.",
+      "SKOP BYGG AS utfører takarbeid og takfornying i Drammen, Buskerud og Oslo.",
     keywords: ["tak", "takarbeid", "Drammen"],
     included: ["Takfornying", "Undertak", "Lekter", "Garasjetak"],
     process: [
       { title: "Sjekk", text: "Takets tilstand vurderes for lekkasje, slitasje og skade." },
-      { title: "Utbedring", text: "Nodvendige deler byttes eller fornyes." },
+      { title: "Utbedring", text: "Nødvendige deler byttes eller fornyes." },
       { title: "Sikring", text: "Takflaten kontrolleres for tetthet og levetid." },
     ],
     faq: [
       {
         question: "Tar dere takarbeid?",
         answer:
-          "Ja, vi tar takarbeid, takfornying og reparasjoner pa bolig og garasje.",
+          "Ja, vi tar takarbeid, takfornying og reparasjoner på bolig og garasje.",
       },
     ],
   },
@@ -301,7 +301,7 @@ export const services: Service[] = [
       {
         question: "Bytter dere kledning?",
         answer:
-          "Ja, vi utforer kledningsbytte, etterisolering og fasadearbeid.",
+          "Ja, vi utfører kledningsbytte, etterisolering og fasadearbeid.",
       },
     ],
   },
@@ -317,7 +317,7 @@ export const services: Service[] = [
     keywords: ["terrasse", "platting", "Drammen"],
     included: ["Platting", "Rekkverk", "Trapp", "Pergola"],
     process: [
-      { title: "Plan", text: "Storrelse, hoyde og bruksbehov avklares." },
+      { title: "Plan", text: "Størrelse, høyde og bruksbehov avklares." },
       { title: "Konstruksjon", text: "Terrassen bygges med stabilt fundament og riktig fall." },
       { title: "Detaljer", text: "Rekkverk, trapp og avslutninger ferdigstilles." },
     ],
@@ -334,14 +334,14 @@ export const services: Service[] = [
     title: "Garasje",
     shortTitle: "Garasje",
     description:
-      "Garasje, bod og uthus bygget med funksjonelle losninger, solid konstruksjon og god finish.",
+      "Garasje, bod og uthus bygget med funksjonelle løsninger, solid konstruksjon og god finish.",
     seoTitle: "Garasje Drammen",
     seoDescription:
       "SKOP BYGG AS bygger garasje, bod og uthus i Drammen, Buskerud og Oslo.",
     keywords: ["garasje", "bod", "uthus", "Drammen"],
     included: ["Garasje", "Bod", "Uthus", "Tak og kledning"],
     process: [
-      { title: "Avklaring", text: "Bruk, storrelse og plassering vurderes." },
+      { title: "Avklaring", text: "Bruk, størrelse og plassering vurderes." },
       { title: "Bygging", text: "Konstruksjonen bygges solid med praktiske detaljer." },
       { title: "Overlevering", text: "Garasjen ferdigstilles og kontrolleres." },
     ],
@@ -358,7 +358,7 @@ export const services: Service[] = [
     title: "Hytte og fritidsbolig",
     shortTitle: "Hytte",
     description:
-      "Hytte, fritidsbolig og tilpasninger bygget for helarsbruk, norske forhold og praktisk vedlikehold.",
+      "Hytte, fritidsbolig og tilpasninger bygget for helårsbruk, norske forhold og praktisk vedlikehold.",
     seoTitle: "Hytte Buskerud",
     seoDescription:
       "SKOP BYGG AS bygger og rehabiliterer hytte og fritidsbolig i Buskerud, Drammen og Norge.",
@@ -367,7 +367,7 @@ export const services: Service[] = [
     process: [
       { title: "Behov", text: "Bruk, sesong og beliggenhet avklares." },
       { title: "Bygging", text: "Arbeidet tilpasses klima, adkomst og materialvalg." },
-      { title: "Vedlikehold", text: "Lettstelt finish og varige losninger prioriteres." },
+      { title: "Vedlikehold", text: "Lettstelt finish og varige løsninger prioriteres." },
     ],
     faq: [
       {

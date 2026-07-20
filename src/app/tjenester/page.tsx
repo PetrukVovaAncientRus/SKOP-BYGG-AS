@@ -53,12 +53,12 @@ export default function TjenesterPage() {
             ]}
           />
           <h1 className="text-4xl font-black tracking-tight uppercase">
-            Vare tjenester
+            Våre tjenester
           </h1>
           <p className="text-neutral-400 mt-2 max-w-xl mx-auto text-sm">
-            Profesjonell utforelse innen nybygg, tilbygg, pabygg,
-            rehabilitering, renovering, bad, kjokken, tak, fasade og
-            tomrerarbeid i Drammen, Buskerud og Oslo.
+            Profesjonell utførelse innen nybygg, tilbygg, påbygg,
+            rehabilitering, renovering, bad, kjøkken, tak, fasade og
+            tømrerarbeid i Drammen, Buskerud og Oslo.
           </p>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function TjenesterPage() {
             Skreddersydde prosjekter?
           </h2>
           <p className="text-gray-300 text-sm max-w-xl mx-auto mb-6">
-            Mange oppdrag kombinerer flere av vare tjenester som en
+            Mange oppdrag kombinerer flere av våre tjenester som en
             totalentreprise. Kontakt oss direkte for en uforpliktende prat eller
             gratis befaring.
           </p>
@@ -168,7 +168,7 @@ export default function TjenesterPage() {
               <div className="bg-gray-50 border border-gray-200/60 p-5 rounded-xl">
                 <h3 className="text-sm font-mono uppercase tracking-wider text-gray-500 mb-3 flex items-center">
                   <ClipboardCheck size={16} className="mr-2 text-brand-orange" />
-                  Hva som inngar i faget:
+                  Hva som inngår i faget:
                 </h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                   {valgtTjeneste.included.map((item) => (

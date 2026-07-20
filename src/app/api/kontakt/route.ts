@@ -53,7 +53,7 @@ export async function POST(request: Request) {
 
     if (!body) {
       return NextResponse.json(
-        { error: "Ugyldig foresporsel." },
+        { error: "Ugyldig forespørsel." },
         { status: 400 }
       );
     }
@@ -91,7 +91,7 @@ export async function POST(request: Request) {
         "SMTP is not configured. Required env vars: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_TO, MAIL_FROM."
       );
       return NextResponse.json(
-        { error: "Kontaktskjemaet er ikke konfigurert pa serveren." },
+        { error: "Kontaktskjemaet er ikke konfigurert på serveren." },
         { status: 500 }
       );
     }
@@ -115,9 +115,9 @@ export async function POST(request: Request) {
       from: smtp.from,
       to: smtp.to,
       replyTo: `${name} <${email}>`,
-      subject: `Ny foresporsel fra ${name} - SKOP BYGG AS`,
+      subject: `Ny forespørsel fra ${name} - SKOP BYGG AS`,
       text: [
-        "Ny foresporsel fra kontaktskjemaet",
+        "Ny forespørsel fra kontaktskjemaet",
         "",
         `Navn/firma: ${name}`,
         `E-post: ${email}`,
@@ -128,7 +128,7 @@ export async function POST(request: Request) {
       ].join("\n"),
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;color:#111827">
-          <h2>Ny foresporsel fra kontaktskjemaet</h2>
+          <h2>Ny forespørsel fra kontaktskjemaet</h2>
           <p><strong>Navn/firma:</strong> ${safeName}</p>
           <p><strong>E-post:</strong> ${safeEmail}</p>
           <p><strong>Telefon:</strong> ${safePhone}</p>
@@ -142,7 +142,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("Feil i /api/kontakt:", error);
     return NextResponse.json(
-      { error: "Kunne ikke sende meldingen akkurat na. Prov igjen senere." },
+      { error: "Kunne ikke sende meldingen akkurat nå. Prøv igjen senere." },
       { status: 502 }
     );
   }
